@@ -113,10 +113,15 @@ body {
 #main #grid-container #profile-div .menu span {
   margin: 0.45rem 0;
   font-size: 13px;
-  cursor: pointer;
 }
 #main #grid-container #profile-div .menu .default {
   color: #fff;
+  filter: brightness(1.1);
+}
+#main #grid-container #profile-div .menu span:hover {
+  cursor: pointer;
+  color: #fff;
+  filter: brightness(0.9);
 }
 @media screen and (max-width: 635px) {
   #main #grid-container #profile-div .menu {
@@ -183,6 +188,10 @@ body {
     justify-self: right;
     align-self: center;
   }
+}
+#main #grid-container .g-item .info:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
 }
 #main #grid-container #work-div {
   background-color: hsl(15, 100%, 70%);

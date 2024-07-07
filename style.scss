@@ -134,11 +134,17 @@ body {
                 span {
                     margin: .45rem 0;
                     font-size: $small-font-size;
-                    cursor: pointer;
                 }
 
                 .default {
                     color: #fff;
+                    filter: brightness(1.1);
+                }
+
+                span:hover {
+                    cursor: pointer;
+                    color: #fff;
+                    filter: brightness(.9);
                 }
 
                 @media screen and (max-width: 635px) {
@@ -218,6 +224,11 @@ body {
                         }
                     }
                 }
+            }
+
+            .info:hover {
+                filter: brightness(1.5);
+                cursor: pointer;
             }
         }
 
