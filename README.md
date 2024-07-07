@@ -16,7 +16,7 @@ This is a web template that gives users the ability to track the time they spend
 
 ## Website Link
 
-Website link here...
+[Time Dashboard](https://r00kiead.github.io/time-tracking-dashboard/)
 
 ## Technologies used
     - HTML5
