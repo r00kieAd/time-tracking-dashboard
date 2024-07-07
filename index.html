@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Time Dashboard</title>
   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div id="main">
+  <div class="rubik-font" id="main">
     <div id="grid-container">
       <div class="g-item g-item-1" id="profile-div">
         <div class="profile">
@@ -21,102 +27,103 @@
           </div>
         </div>
         <div class="menu">
-          <span>Daily</span>
-          <span>Daily</span>
-          <span>Daily</span>
+          <span class="default">Daily</span>
+          <span>Weekly</span>
+          <span>Monthly</span>
         </div>
       </div>
-    </div>
-    <div class="g-item g-item-2" id="work-div">
-      <div class="bg wbg">
-        <span>bg</span>
-      </div>
-      <div class="info work-info">
-        <div class="work-menu">
-          <span class="title">Work</span>
-          <span class="ellipses work-ellipses"></span>
+      <div class="g-item g-item-2" id="work-div">
+        <div class="bg wbg">
+          <span>bg</span>
         </div>
-        <div class="work-info">
-          <p class="work-time time">32hrs</p>
-          <span class="work-history history">Last Week - <span class="wh">36hrs</span></span>
-        </div>
-      </div>
-    </div>
-    <div class="g-item g-item-3" id="play-div">
-      <div class="bg pbg">
-        <span>bg</span>
-      </div>
-      <div class="info play-info">
-        <div class="play-menu">
-          <span class="title">Play</span>
-          <span class="ellipses play-ellipses"></span>
-        </div>
-        <div class="play-info">
-          <p class="play-time time">10hrs</p>
-          <span class="play-history history">Last Week - <span class="ph">8hrs</span></span>
+        <div class="info work-info">
+          <div class="work-menu">
+            <span class="title">Work</span>
+            <span class="ellipses work-ellipses"></span>
+          </div>
+          <div class="work-info">
+            <p class="work-time time">32hrs</p>
+            <span class="work-history history">Last Week - <span class="wh">36hrs</span></span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="g-item g-item-4" id="study-div">
-      <div class="bg sbg">
-        <span>bg</span>
-      </div>
-      <div class="info study-info">
-        <div class="study-menu">
-          <span class="title">Study</span>
-          <span class="ellipses study-ellipses"></span>
+      <div class="g-item g-item-3" id="play-div">
+        <div class="bg pbg">
+          <span>bg</span>
         </div>
-        <div class="study-info">
-          <p class="study-time time">4hrs</p>
-          <span class="study-history history">Last Week - <span class="sh">7hrs</span></span>
-        </div>
-      </div>
-    </div>
-    <div class="g-item g-item-5" id="exercise-div">
-      <div class="bg ebg">
-        <span>bg</span>
-      </div>
-      <div class="info exercise-info">
-        <div class="exercise-menu">
-          <span class="title">Exercise</span>
-          <span class="ellipses exercise-ellipses"></span>
-        </div>
-        <div class="exercise-info">
-          <p class="exercise-time time">4hrs</p>
-          <span class="exercise-history history">Last Week - <span class="eh">5hrs</span></span>
+        <div class="info play-info">
+          <div class="play-menu">
+            <span class="title">Play</span>
+            <span class="ellipses play-ellipses"></span>
+          </div>
+          <div class="play-info">
+            <p class="play-time time">10hrs</p>
+            <span class="play-history history">Last Week - <span class="ph">8hrs</span></span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="g-item g-item-6" id="social-div">
-      <div class="bg scbg">
-        <span>bg</span>
-      </div>
-      <div class="info social-info">
-        <div class="social-menu">
-          <span class="title">Social</span>
-          <span class="ellipses social-ellipses"></span>
+      <div class="g-item g-item-4" id="study-div">
+        <div class="bg sbg">
+          <span>bg</span>
         </div>
-        <div class="social-info">
-          <p class="social-time time">5hrs</p>
-          <span class="social-history history">Last Week - <span class="sch">10hrs</span></span>
+        <div class="info study-info">
+          <div class="study-menu">
+            <span class="title">Study</span>
+            <span class="ellipses study-ellipses"></span>
+          </div>
+          <div class="study-info">
+            <p class="study-time time">4hrs</p>
+            <span class="study-history history">Last Week - <span class="sh">7hrs</span></span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="g-item g-item-7" id="selfcare-div">
-      <div class="bg slfbg">
-        <span>bg</span>
-      </div>
-      <div class="info selfcare-info">
-        <div class="selfcare-menu">
-          <span class="title">Exercise</span>
-          <span class="ellipses selfcare-ellipses"></span>
+      <div class="g-item g-item-5" id="exercise-div">
+        <div class="bg ebg">
+          <span>bg</span>
         </div>
-        <div class="selfcare-info">
-          <p class="selfcare-time time">2hrs</p>
-          <span class="selfcare-history history">Last Week - <span class="slfh">2hrs</span></span>
+        <div class="info exercise-info">
+          <div class="exercise-menu">
+            <span class="title">Exercise</span>
+            <span class="ellipses exercise-ellipses"></span>
+          </div>
+          <div class="exercise-info">
+            <p class="exercise-time time">4hrs</p>
+            <span class="exercise-history history">Last Week - <span class="eh">5hrs</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="g-item g-item-6" id="social-div">
+        <div class="bg scbg">
+          <span>bg</span>
+        </div>
+        <div class="info social-info">
+          <div class="social-menu">
+            <span class="title">Social</span>
+            <span class="ellipses social-ellipses"></span>
+          </div>
+          <div class="social-info">
+            <p class="social-time time">5hrs</p>
+            <span class="social-history history">Last Week - <span class="sch">10hrs</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="g-item g-item-7" id="selfcare-div">
+        <div class="bg slfbg">
+          <span>bg</span>
+        </div>
+        <div class="info selfcare-info">
+          <div class="selfcare-menu">
+            <span class="title">Exercise</span>
+            <span class="ellipses selfcare-ellipses"></span>
+          </div>
+          <div class="selfcare-info">
+            <p class="selfcare-time time">2hrs</p>
+            <span class="selfcare-history history">Last Week - <span class="slfh">2hrs</span></span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </body>
+
 </html>

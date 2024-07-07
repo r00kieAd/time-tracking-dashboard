@@ -1,0 +1,111 @@
+$Blue: hsl(246, 80%, 60%);
+$Light-red-work: hsl(15, 100%, 70%);
+$Soft-blue-play: hsl(195, 74%, 62%);
+$Light-red-study: hsl(348, 100%, 68%);
+$Lime-green-exercise: hsl(145, 58%, 55%);
+$Violet-social: hsl(264, 64%, 52%);
+$Soft-orange-care: hsl(43, 84%, 65%);
+$Very-dark-blue: hsl(226, 43%, 10%);
+$Dark-blue: hsl(235, 46%, 20%);
+$Desaturated-blue: hsl(235, 45%, 61%);
+$Pale-blue: hsl(236, 100%, 87%);
+$grid-item-width: 13.5rem;
+$main-div-width: calc($grid-item-width * 4);
+$main-font-size: 18px;
+$small-font-size: calc($main-font-size - 5px);
+$dp-size: clamp(50px, 3.75rem, 70px);
+$grid-item-border: .1px solid black;
+$grid-item-border-radius: 10px;
+
+.rubik-font {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: $main-font-size;
+    font-style: normal;
+}
+
+body {
+    background-color: $Very-dark-blue;
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $main-div-width;
+    height: auto;
+    // border: 1px solid black;
+    // border-radius: $grid-item-border-radius;
+    padding: .5rem;
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: $grid-item-width $grid-item-width $grid-item-width $grid-item-width;
+        grid-template-rows: auto auto;
+        justify-content: center;
+
+        .g-item {
+            border: $grid-item-border;
+            margin: .8rem;
+        }
+
+        .g-item-1 {
+            grid-row: 1 / span 2;
+        }
+
+        #profile-div {
+            color: $Pale-blue;
+            .profile {
+                .dp {
+                    img {
+                        width: $dp-size;
+                        height: auto;
+                        border: 5px solid white;
+                        border-radius: 60px;
+                    }
+                }
+
+                .profile-info {
+                    position: relative;
+                    margin-top: 3rem;
+                    span {
+                        line-height: 0;
+                        font-size: $small-font-size;
+                        filter: opacity(.5);
+                        font-weight: 600;
+                        position: absolute;
+                        top: -10px;
+                    }
+
+                    p {
+                        font-size: calc($main-font-size + 10px);
+                        line-break: strict;
+                        color: #fff;
+                        font-weight: 200;
+                    }
+                }
+                padding: 2rem 1rem;
+                background-color: $Blue;
+                border-radius: $grid-item-border-radius;
+            }
+            .menu {
+                padding: 1rem;
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto auto;
+
+                span {
+                    margin: .45rem 0;
+                    font-size: $small-font-size;
+                    cursor: pointer;
+                }
+
+                .default {
+                    color: #fff;
+                }
+            }
+            background-color: $Dark-blue;
+            border-radius: $grid-item-border-radius;
+        }
+    }
+}
