@@ -13,13 +13,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 54rem;
+  width: 54.4rem;
   height: auto;
   padding: 0.5rem;
 }
 #main #grid-container {
   display: grid;
-  grid-template-columns: 13.5rem 13.5rem 13.5rem 13.5rem;
+  grid-template-columns: 13.6rem 13.6rem 13.6rem 13.6rem;
   grid-template-rows: auto auto;
   justify-content: center;
 }
@@ -33,12 +33,12 @@ body {
 #main #grid-container #profile-div {
   color: hsl(236, 100%, 87%);
   background-color: hsl(235, 46%, 20%);
-  border-radius: 10px;
+  border-radius: 12px;
 }
 #main #grid-container #profile-div .profile {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   background-color: hsl(246, 80%, 60%);
-  border-radius: 10px;
+  border-radius: 12px;
 }
 #main #grid-container #profile-div .profile .dp img {
   width: clamp(50px, 3.75rem, 70px);
@@ -77,4 +77,82 @@ body {
 }
 #main #grid-container #profile-div .menu .default {
   color: #fff;
+}
+#main #grid-container .bg span {
+  visibility: hidden;
+}
+#main #grid-container .g-item {
+  border-radius: 12px;
+}
+#main #grid-container .g-item .bg {
+  background-repeat: no-repeat;
+  background-position: 90%;
+  background-size: 50px;
+  padding: 0.4rem 0;
+  border-radius: 12px 12px 0 0;
+}
+#main #grid-container .g-item .info {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: hsl(235, 46%, 20%);
+  color: #fff;
+  height: 70%;
+}
+#main #grid-container .g-item .info .sub-menu {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #grid-container .g-item .info .sub-menu .ellipses {
+  width: 15px;
+}
+#main #grid-container .g-item .info .statistics {
+  position: relative;
+}
+#main #grid-container .g-item .info .statistics .time {
+  font-size: 34px;
+  font-weight: 300;
+}
+#main #grid-container .g-item .info .statistics .history {
+  font-size: 13px;
+  filter: opacity(0.6);
+  position: absolute;
+  top: 50px;
+}
+#main #grid-container #work-div {
+  background-color: hsl(15, 100%, 70%);
+}
+#main #grid-container #work-div .bg {
+  background-image: url(images/icon-work.svg);
+}
+#main #grid-container #play-div {
+  background-color: hsl(195, 74%, 62%);
+}
+#main #grid-container #play-div .bg {
+  background-image: url(images/icon-play.svg);
+}
+#main #grid-container #study-div {
+  background-color: hsl(348, 100%, 68%);
+}
+#main #grid-container #study-div .bg {
+  background-image: url(images/icon-study.svg);
+}
+#main #grid-container #exercise-div {
+  background-color: hsl(145, 58%, 55%);
+}
+#main #grid-container #exercise-div .bg {
+  background-image: url(images/icon-exercise.svg);
+}
+#main #grid-container #social-div {
+  background-color: hsl(264, 64%, 52%);
+}
+#main #grid-container #social-div .bg {
+  background-image: url(images/icon-social.svg);
+}
+#main #grid-container #selfcare-div {
+  background-color: hsl(43, 84%, 65%);
+}
+#main #grid-container #selfcare-div .bg {
+  background-image: url(images/icon-self-care.svg);
 }/*# sourceMappingURL=style.css.map */

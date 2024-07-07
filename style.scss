@@ -9,13 +9,13 @@ $Very-dark-blue: hsl(226, 43%, 10%);
 $Dark-blue: hsl(235, 46%, 20%);
 $Desaturated-blue: hsl(235, 45%, 61%);
 $Pale-blue: hsl(236, 100%, 87%);
-$grid-item-width: 13.5rem;
+$grid-item-width: 13.6rem;
 $main-div-width: calc($grid-item-width * 4);
 $main-font-size: 18px;
 $small-font-size: calc($main-font-size - 5px);
 $dp-size: clamp(50px, 3.75rem, 70px);
 $grid-item-border: .1px solid black;
-$grid-item-border-radius: 10px;
+$grid-item-border-radius: 12px;
 
 .rubik-font {
     font-family: "Rubik", sans-serif;
@@ -84,7 +84,7 @@ body {
                         font-weight: 200;
                     }
                 }
-                padding: 2rem 1rem;
+                padding: 1.5rem 1rem;
                 background-color: $Blue;
                 border-radius: $grid-item-border-radius;
             }
@@ -106,6 +106,97 @@ body {
             }
             background-color: $Dark-blue;
             border-radius: $grid-item-border-radius;
+        }
+
+        .bg {
+            span {
+                visibility: hidden;
+            }
+        }
+
+        .g-item {
+            border-radius: $grid-item-border-radius;
+
+            .bg {
+                background-repeat: no-repeat;
+                background-position: 90%;
+                background-size: 50px;
+                padding: .4rem 0;
+                border-radius: $grid-item-border-radius $grid-item-border-radius 0 0;
+            }
+            .info {
+                padding: 1rem;
+                border-radius: $grid-item-border-radius;
+                background-color: $Dark-blue;
+                color: #fff;
+                height: 70%;
+                .sub-menu {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .ellipses {
+                        width: 15px;
+                    }
+                }
+
+                .statistics {
+                    position: relative;
+                    .time {
+                        font-size: calc($main-font-size + 16px);
+                        font-weight: 300;
+                    }
+                    .history {
+                        font-size: $small-font-size;
+                        filter: opacity(.6);
+                        position: absolute;
+                        top: 50px;
+                    }
+                }
+            }
+        }
+
+        #work-div {
+            background-color: $Light-red-work;
+            .bg {
+                background-image: url(images/icon-work.svg);
+            }
+        };
+
+        #play-div {
+            background-color: $Soft-blue-play;
+            .bg {
+                background-image: url(images/icon-play.svg);
+            }
+        }
+
+        #study-div {
+            background-color: $Light-red-study;
+            .bg {
+                background-image: url(images/icon-study.svg);
+            }
+        }
+
+        #exercise-div {
+            background-color: $Lime-green-exercise;
+            .bg {
+                background-image: url(images/icon-exercise.svg);
+            }
+        }
+
+        #social-div {
+            background-color: $Violet-social;
+            .bg {
+                background-image: url(images/icon-social.svg);
+            }
+        }
+
+        #selfcare-div {
+            background-color: $Soft-orange-care;
+            .bg {
+                background-image: url(images/icon-self-care.svg);
+            }
         }
     }
 }
