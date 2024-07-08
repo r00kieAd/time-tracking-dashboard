@@ -11,7 +11,7 @@ $(document).ready(function() {
             fillSelfCareData(data[5], 'dly');
         },
         error: function(jqXHR, textStatus, errorThrown) {
-            console.log("Error loading JSON file: " + textStatus);
+            alert("Error loading JSON file: " + textStatus);
         }
     });
 });
@@ -112,7 +112,7 @@ $('.time-frame').click(
                 fillSelfCareData(data[5], time_frame);
             },
             error: function(jqXHR, textStatus, errorThrown) {
-                console.log("Error loading JSON file: " + textStatus);
+                alert("Error loading JSON file: " + textStatus);
             }
         });
     }
