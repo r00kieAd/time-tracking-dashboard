@@ -22,7 +22,6 @@ This is a web template that gives users the ability to track the time they spend
     - HTML5
     - CSS3
     - SASS
-    - Vanilla JavaScript
     - JQuery
 
 # License
