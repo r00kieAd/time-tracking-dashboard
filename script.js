@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: "/data.json",
+        url: "data.json",
         dataType: "json",
         success: function(data) {
             fillWorkData(data[0], 'dly');
@@ -101,7 +101,7 @@ $('.time-frame').click(
         $('.time-frame').removeClass('default');
         $(this).addClass('default');
         $.ajax({
-            url: "/data.json",
+            url: "data.json",
             dataType: "json",
             success: function(data) {
                 fillWorkData(data[0], time_frame);
